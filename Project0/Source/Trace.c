@@ -80,6 +80,7 @@ void TraceMessage(const char * formatString, ...)
 	UNREFERENCED_PARAMETER(formatString);
 
 	// TODO: Write the message to the Tracing/Logging file.
+
 	if(traceFile != NULL)
 	{
 		va_list args;
