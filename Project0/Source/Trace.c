@@ -80,6 +80,16 @@ void TraceMessage(const char * formatString, ...)
 	UNREFERENCED_PARAMETER(formatString);
 
 	// TODO: Write the message to the Tracing/Logging file.
+	if(traceFile != NULL)
+	{
+		va_list args;
+
+		va_start(args, formatString);
+		vfprintf(traceFile, formatString, args);
+		fprintf_s(traceFile, "\n");
+		va_end(args);
+
+	}
 
 }
 
@@ -90,7 +100,7 @@ void TraceShutdown()
 	// TODO: Close "trace.log" if it has been opened successfully.
 	if(traceFile != NULL)
 	{
-		
+		fclose(traceFile);
 	}
 
 }
