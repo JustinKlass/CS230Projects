@@ -34,6 +34,7 @@ static const char* traceFileName = "Trace.log";
 //------------------------------------------------------------------------------
 
 // TODO: Declare a private variable for storing a file handle.
+static FILE* traceFile;
 
 //------------------------------------------------------------------------------
 // Private Function Declarations:
@@ -51,6 +52,18 @@ void TraceInit()
 	// TODO: Open "trace.log" for writing (text mode).
 	// fopen_s:
 	// https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(stdio%2Ffopen_s);k(fopen_s);k(DevLang-C%2B%2B);k(TargetOS-Windows)&rd=true
+	errno_t err;
+
+	// Open for read (will fail if file "crt_fopen_s.c" doesn't exist)
+	err = fopen_s(&traceFile, "trace.log", "wt");
+	if (err == 0)
+	{
+		AESysPrintf("The file 'trace.log' was opened\n");
+	}
+	else
+	{
+		AESysPrintf("The file 'trace.log' was not opened\n");
+	}
 
 	// Error handling (implementation details to be determined by the student):
 	// https://msdn.microsoft.com/en-us/library/9t0e6085.aspx
@@ -75,6 +88,10 @@ void TraceMessage(const char * formatString, ...)
 void TraceShutdown()
 {
 	// TODO: Close "trace.log" if it has been opened successfully.
+	if(traceFile != NULL)
+	{
+		
+	}
 
 }
 
