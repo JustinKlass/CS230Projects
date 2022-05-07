@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 //
 // File Name:	GameStateDemo.c
-// Author(s):	Doug Schilling (dschilling)
+// Author(s):	Justin Klass (justin.klass)
 // Project:		Project 0
 // Course:		CS230S22
 //
@@ -251,14 +251,13 @@ void GameStateDemoUpdate(float dt)
 		GameStateDemoUnload();
 		GameStateDemoInit();
 		GameStateDemoLoad();
+
 	}
 }
 
 // Free any memory associated with the Demo game state.
 void GameStateDemoShutdown()
 {
-	// free the system
-	AESysExit();
 }
 
 // Unload the resources associated with the Demo game state.

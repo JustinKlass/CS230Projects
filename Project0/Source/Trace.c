@@ -2,6 +2,7 @@
 //
 // File Name:	Trace.c
 // Author(s):	Doug Schilling (dschilling)
+//				Justin Klass (justin.klass)
 // Project:		Project 0
 // Course:		CS230S22
 //

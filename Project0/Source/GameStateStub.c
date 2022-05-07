@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 //
 // File Name:	GameStateStub.c
-// Author(s):	Doug Schilling (dschilling)
+// Author(s):	Justin Klass (justin.klass)
 // Project:		Project 0
 // Course:		CS230S22
 //
