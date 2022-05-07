@@ -1,11 +1,4 @@
-﻿  Engine.c
-  GameStateDemo.c
-  GameStateManager.c
-  GameStateStub.c
-  GameStateTable.c
-  Main.c
-  System.c
-  Generating Code...
+﻿  GameStateDemo.c
   Project0.vcxproj -> C:\Users\12038\Desktop\CodingProjects\CS230\CS230Projects\Project0\Debug\Project0.exe
   .\AE\lib\Alpha_Engine_D.dll
   1 File(s) copied
