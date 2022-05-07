@@ -56,14 +56,14 @@ void TraceInit()
 	errno_t err;
 
 	// Open for read (will fail if file "crt_fopen_s.c" doesn't exist)
-	err = fopen_s(&traceFile, "trace.log", "wt");
+	err = fopen_s(&traceFile, "Trace.log", "wt");
 	if (err == 0)
 	{
-		AESysPrintf("The file 'trace.log' was opened\n");
+		AESysPrintf("The file 'Trace.log' was opened\n");
 	}
 	else
 	{
-		AESysPrintf("The file 'trace.log' was not opened\n");
+		AESysPrintf("The file 'Trace.log' was not opened\n");
 	}
 
 	// Error handling (implementation details to be determined by the student):
