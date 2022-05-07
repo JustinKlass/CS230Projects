@@ -52,7 +52,6 @@ typedef struct
 static const GameStateTableEntry GameStateTab[GsNum] =
 {
 	// Stub Game State - This is here as a placeholder only.
-	{ "Stub",	GameStateStubLoad, GameStateStubInit, GameStateStubUpdate, GameStateStubShutdown, GameStateStubUnload },
 	{ "Demo",	GameStateDemoLoad, GameStateDemoInit, GameStateDemoUpdate, GameStateDemoShutdown, GameStateDemoUnload }
 };
 

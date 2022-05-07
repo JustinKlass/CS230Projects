@@ -34,7 +34,6 @@ typedef enum
 	GsInvalid = -1,
 
 	/* Normal Game States: */
-	GsStub,			// This is here as a placeholder only.
 	GsDemo,
 
 	/* Bookkeeping States: */
