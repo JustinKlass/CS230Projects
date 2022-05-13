@@ -11,8 +11,9 @@
 
 #include "stdafx.h"
 #include "GameStateManager.h"
-#include "GameStateStub.h"
+#include "GameStateLevel2.h"
 #include "Trace.h"
+#include "Stream.h"
 
 //------------------------------------------------------------------------------
 // Private Constants:
@@ -40,33 +41,31 @@ static int numHealth = 0;
 //------------------------------------------------------------------------------
 
 // Load the resources associated with the Stub game state.
-void GameStateStubLoad()
+void GameStateLevel2Load()
 {
-	FILE* fp;
-	fp = StreamOpen("Level2_Lives.txt");
+	Stream fp = StreamOpen("Data/Level2_Lives.txt");
 	if (fp != NULL)
 	{
 		numLives = StreamReadInt(fp);
-		StreamClose(fp);
+		StreamClose(&fp);
 	}
 }
 
 // Initialize the memory associated with the Stub game state.
-void GameStateStubInit()
+void GameStateLevel2Init()
 {
-	FILE* fp;
-	fp = StreamOpen("Level2_Health.txt");
+	Stream fp = StreamOpen("Data/Level2_Health.txt");
 	if (fp != NULL)
 	{
 		numHealth = StreamReadInt(fp);
-		StreamClose(fp);
+		StreamClose(&fp);
 	}
 }
 
 // Update the Stub game state.
 // Params:
 //	 dt = Change in time (in seconds) since the last game loop.
-void GameStateStubUpdate(float dt)
+void GameStateLevel2Update(float dt)
 {
 	/* Tell the compiler that the 'dt' variable is unused. */
 	UNREFERENCED_PARAMETER(dt);
@@ -87,13 +86,13 @@ void GameStateStubUpdate(float dt)
 }
 
 // Free any memory associated with the Stub game state.
-void GameStateStubShutdown()
+void GameStateLevel2Shutdown()
 {
 	// Free all objects.
 }
 
 // Unload the resources associated with the Stub game state.
-void GameStateStubUnload()
+void GameStateLevel2Unload()
 {
 	// Free all sprite sources.
 

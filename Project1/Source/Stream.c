@@ -17,12 +17,13 @@
 Stream StreamOpen(const char* filename)
 {
 	errno_t err;
+	Stream file;
 
 	// Open for read (will fail if file "crt_fopen_s.c" doesn't exist)
-	err = fopen_s(&filename, filename, "rt");
+	err = fopen_s(&file, filename, "rt");
 	if (err == 0)
 	{
-		return filename;
+		return file;
 	}
 	else
 	{
@@ -30,20 +31,19 @@ Stream StreamOpen(const char* filename)
 		strerror_s(errorMsg, 1024, err);
 		TraceMessage("Error: StreamOpen could not open file %s; %s", filename, errorMsg);
 	}
-	return 0;
+	return NULL;
 }
 
 int StreamReadInt(Stream stream)
 {
-	int streamInt;
 	if(stream == NULL)
 	{
 		return 0;
 	}
+	int streamInt;
 	fscanf_s(stream, "%i", &streamInt);
 	return streamInt;
 }
-
 
 float StreamReadFloat(Stream stream)
 {
@@ -68,15 +68,12 @@ void StreamReadVector2D(Stream stream, Vector2D* vector)
 	{
 		TraceMessage("Error: Stream or Vector is invalid");
 	}
-
-	return 0;
 }
 
-
-void StreamClose(Stream* stream)
+void StreamClose(Stream * stream)
 {
 	if(stream != NULL)
 	{
-		fclose(stream);
+		fclose((FILE*)*stream);
 	}
 }

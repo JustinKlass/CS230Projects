@@ -11,7 +11,7 @@
 
 #include "stdafx.h"
 #include "GameStateManager.h"
-#include "GameStateStub.h"
+#include "GameStateLevel1.h"
 #include "Trace.h"
 #include "Stream.h"
 
@@ -42,12 +42,11 @@ static int numLives1 = 0;
 // Load the resources associated with the Stub game state.
 void GameStateLevel1Load()
 {
-	FILE *fp;
-	fp = StreamOpen("Level1_Lives.txt");
+	Stream fp = StreamOpen("Data/Level1_Lives.txt");
 	if(fp != NULL)
 	{
 		numLives1 = StreamReadInt(fp);
-		StreamClose(fp);
+		StreamClose(&fp);
 	}
 }
 

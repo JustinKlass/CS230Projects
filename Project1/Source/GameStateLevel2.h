@@ -43,21 +43,21 @@ extern "C" {
 //------------------------------------------------------------------------------
 
 // Load the resources associated with the Stub game state.
-void GameStateStubLoad();
+void GameStateLevel2Load();
 
 // Initialize the memory associated with the Stub game state.
-void GameStateStubInit();
+void GameStateLevel2Init();
 
 // Update the Stub game state.
 // Params:
 //	 dt = Change in time (in seconds) since the last game loop.
-void GameStateStubUpdate(float dt);
+void GameStateLevel2Update(float dt);
 
 // Shutdown any memory associated with the Stub game state.
-void GameStateStubShutdown();
+void GameStateLevel2Shutdown();
 
 // Unload the resources associated with the Stub game state.
-void GameStateStubUnload();
+void GameStateLevel2Unload();
 
 /*----------------------------------------------------------------------------*/
 

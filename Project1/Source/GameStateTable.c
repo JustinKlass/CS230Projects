@@ -14,6 +14,9 @@
 #include "GameStateManager.h"
 #include "GameStateTable.h"
 #include "Trace.h"
+#include "GameStateLevel1.h"
+#include "GameStateLevel2.h"
+#include "GameStateSandbox.h"
 
 /* Include all game state headers here. */
 #include "GameStateStub.h"	// This is here as a placeholder only.
