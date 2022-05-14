@@ -3,7 +3,7 @@
 // File Name:	GameStateManager.c
 // Author(s):	Doug Schilling (dschilling)
 //				Justin Klass (justin.klass)
-// Project:		Project 0
+// Project:		Project 1
 // Course:		CS230S22
 //
 // Copyright © 2022 DigiPen (USA) Corporation.

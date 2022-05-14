@@ -2,7 +2,7 @@
 //
 // File Name:	GameStateLevel1.c
 // Author(s):	Justin Klass (justin.klass)
-// Project:		Project 0
+// Project:		Project 1
 // Course:		CS230S22
 //
 // Copyright © 2022 DigiPen (USA) Corporation.
@@ -89,4 +89,3 @@ void GameStateLevel1Unload()
 //------------------------------------------------------------------------------
 // Private Functions:
 //------------------------------------------------------------------------------
-

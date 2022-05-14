@@ -1,3 +1,13 @@
+//------------------------------------------------------------------------------
+//
+// File Name:	Engine.c
+// Author(s):	Justin Klass (justin.klass)
+// Project:		Project 1
+// Course:		CS230S22
+//
+// Copyright © 2022 DigiPen (USA) Corporation.
+//
+//------------------------------------------------------------------------------
 #include "stdafx.h"
 #include "Vector2D.h"
 #define _USE_MATH_DEFINES
@@ -18,8 +28,8 @@ void Vector2DSet(Vector2D* pResult, float x, float y)
 
 void Vector2DNeg(Vector2D* pResult, const Vector2D* pVec0)
 {
-	pResult->x = pResult->x - pVec0->x * 2;
-	pResult->y = pResult->y - pVec0->y * 2;
+	pResult->x = pVec0->x * -1;
+	pResult->y = pVec0->y * -1;
 }
 
 void Vector2DAdd(Vector2D* pResult, const Vector2D* pVec0, const Vector2D* pVec1)
@@ -49,16 +59,14 @@ void Vector2DScale(Vector2D* pResult, const Vector2D* pVec0, float scale)
 
 void Vector2DScaleAdd(Vector2D* pResult, const Vector2D* pVec0, const Vector2D* pVec1, float scale)
 {
-	Vector2DScale(pResult, pVec0, scale);
-	pResult->x = pResult->x + pVec1->x * scale;
-	pResult->y = pResult->y + pVec1->y * scale;
+	pResult->x = (pVec0->x * scale) + pVec1->x;
+	pResult->y = (pVec0->y * scale) + pVec1->y;
 }
 
 void Vector2DScaleSub(Vector2D* pResult, const Vector2D* pVec0, const Vector2D* pVec1, float scale)
 {
-	Vector2DScale(pResult, pVec0, scale);
-	pResult->x = pResult->x - pVec1->x * scale;
-	pResult->y = pResult->y - pVec1->y * scale;
+	pResult->x = (pVec0->x * scale) - pVec1->x;
+	pResult->y = (pVec0->y * scale) - pVec1->y;
 }
 
 float Vector2DLength(const Vector2D* pVec0)

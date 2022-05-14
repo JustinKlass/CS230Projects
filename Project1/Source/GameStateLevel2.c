@@ -2,7 +2,7 @@
 //
 // File Name:	GameStateStub.c
 // Author(s):	Justin Klass (justin.klass)
-// Project:		Project 0
+// Project:		Project 1
 // Course:		CS230S22
 //
 // Copyright © 2022 DigiPen (USA) Corporation.
@@ -78,10 +78,10 @@ void GameStateLevel2Update(float dt)
 		{
 			GameStateManagerSetNextState(GsSandbox);
 		}
-	}
-	else
-	{
-		GameStateManagerSetNextState(GsRestart);
+		else
+		{
+			GameStateManagerSetNextState(GsRestart);
+		}
 	}
 }
 

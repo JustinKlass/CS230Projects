@@ -1,4 +1,20 @@
-﻿  GameStateSandbox.c
-C:\Users\12038\Desktop\CodingProjects\CS230\CS230Projects\Project1\Source\GameStateSandbox.c(96,13): error C2220: the following warning is treated as an error
-C:\Users\12038\Desktop\CodingProjects\CS230\CS230Projects\Project1\Source\GameStateSandbox.c(96,13): warning C4505: 'GameStateSandboxTraceFloat': unreferenced function with internal linkage has been removed
-C:\Users\12038\Desktop\CodingProjects\CS230\CS230Projects\Project1\Source\GameStateSandbox.c(101,13): warning C4505: 'GameStateSandboxTraceVector': unreferenced function with internal linkage has been removed
+﻿  Engine.c
+  GameStateDemo.c
+  GameStateLevel1.c
+  GameStateLevel2.c
+  GameStateManager.c
+  GameStateSandbox.c
+  GameStateStub.c
+  GameStateTable.c
+  Main.c
+  Stream.c
+  Stub.c
+  System.c
+  Trace.c
+  Vector2D.c
+  Generating Code...
+  Project1.vcxproj -> C:\Users\12038\Desktop\CodingProjects\CS230\CS230Projects\Project1\Debug\Project1.exe
+  .\AE\lib\Alpha_Engine_D.dll
+  1 File(s) copied
+  .\AE\lib\glew32.dll
+  1 File(s) copied
