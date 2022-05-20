@@ -3,7 +3,7 @@
 // File Name:	Mesh.h
 // Author(s):	Doug Schilling (dschilling)
 // Project:		Project 2
-// Course:		CS230S20
+// Course:		CS230SU22A
 //
 // Copyright © 2022 DigiPen (USA) Corporation.
 //
