@@ -1,0 +1,9 @@
+GameObject
+MonkeyLivesText
+Transform
+-350 250
+0
+50 50
+Sprite
+0
+1
