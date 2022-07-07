@@ -2,7 +2,7 @@
 //
 // File Name:	Animation.h
 // Author(s):	Doug Schilling (dschilling)
-// Project:		Project 3
+// Project:		Project 4
 // Course:		CS230S22
 //
 // Copyright © 2022 DigiPen (USA) Corporation.

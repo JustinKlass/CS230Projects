@@ -2,7 +2,7 @@
 //
 // File Name:	Stream.h
 // Author(s):	Doug Schilling (dschilling)
-// Project:		Project 4
+// Project:		Project 5
 // Course:		CS230S22
 //
 // Copyright © 2022 DigiPen (USA) Corporation.
